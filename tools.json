@@ -1,0 +1,69 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "jira_create_issue",
+      "description": "Create a new issue in JIRA with summary and description",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "summary": { "type": "string", "description": "Issue summary" },
+          "description": { "type": "string", "description": "Plain text description" },
+          "projectKey": { "type": "string", "description": "Project key" },
+          "issueType": { "type": "string", "description": "Issue type" }
+        },
+        "required": ["summary", "projectKey"]
+      }
+    },
+    "effect": "act",
+    "_meta": {
+      "sqr/http": {
+        "method": "POST",
+        "url": "https://api.atlassian.com/ex/jira/{cloudid}/rest/api/3/issue"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "jira_get_issue",
+      "description": "Get JIRA issue details with projected fields",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "issueIdOrKey": { "type": "string", "description": "Issue ID or Key" }
+        },
+        "required": ["issueIdOrKey"]
+      }
+    },
+    "effect": "read",
+    "_meta": {
+      "sqr/http": {
+        "method": "GET",
+        "url": "https://api.atlassian.com/ex/jira/{cloudid}/rest/api/3/issue/{issueIdOrKey}"
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "jira_cli_issue_view",
+      "description": "View JIRA issue via local workstation CLI runner",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "issue_key": { "type": "string", "description": "Issue key (e.g. PROJ-101)" }
+        },
+        "required": ["issue_key"]
+      }
+    },
+    "effect": "read",
+    "_meta": {
+      "sqr/cli": {
+        "command": "jira",
+        "args": ["issue", "view", "{issue_key}", "--json"],
+        "timeout": 10000
+      }
+    }
+  }
+]

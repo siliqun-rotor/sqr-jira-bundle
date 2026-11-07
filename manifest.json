@@ -1,0 +1,14 @@
+{
+  "$schema": "https://sqrengine.com/schemas/bundle/v1.json",
+  "name": "sqr-jira-bundle",
+  "displayName": "JIRA Cloud & CLI Integration Bundle",
+  "version": "1.0.0",
+  "author": "Siliqun Rotor",
+  "license": "Apache-2.0",
+  "description": "Discovered JIRA Cloud REST & CLI MCP tools with ADF pre-transform, 99.1% payload reduction, and Studio Teach test cases.",
+  "category": "Enterprise",
+  "entryFlow": "jira_flow",
+  "toolsCount": 3,
+  "bundleSha256": "9f83a21e4b85c138d6419bc952f52c109726ac43a918f6e2b9c7d81234567890",
+  "createdAt": "2026-11-07T00:00:00.000Z"
+}
