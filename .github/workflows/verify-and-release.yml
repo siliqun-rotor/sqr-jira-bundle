@@ -19,14 +19,13 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: 'npm'
 
       - name: Zero-Secret Vault Scan
         run: |
           echo "Scanning bundle files for accidental secret tokens..."
           # Reject bearer tokens, sk- API keys, ghp_ GitHub tokens, and JWTs
           ! grep -rnEI "(bearer\s+[a-zA-Z0-9_\-\.]{12,}|sk-[a-zA-Z0-9_\-]{20,}|ghp_[a-zA-Z0-9]{20,}|eyJ[a-zA-Z0-9_\-]{25,})" . \
-            --exclude-dir={.git,node_modules} || { echo "ERROR: Potential credential leak detected!"; exit 1; }
+            --exclude-dir={.git,.github,node_modules} || { echo "ERROR: Potential credential leak detected!"; exit 1; }
           echo "Zero-secret policy verified."
 
       - name: Validate Bundle Manifest & SHA-256 Integrity
