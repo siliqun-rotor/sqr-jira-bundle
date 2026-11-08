@@ -1,15 +1,200 @@
 {
-  "$schema": "https://sqrengine.com/schemas/bundle/v1.json",
+  "$schema": "https://sqrengine.com/schemas/bundle/v2.json",
   "name": "jira-cloud",
   "displayName": "Jira Cloud",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "author": "Siliqun Rotor Community",
   "license": "Apache-2.0",
-  "description": "Siliqun Rotor Integration Bundle for Jira Cloud",
+  "description": "Jira Cloud operation catalogue with on-demand selection, bounded schema chunks and destination-local Vault authentication. Includes 630 available operations and three initial read operations.",
   "category": "Integrations",
-  "entryFlow": "jira-real-read",
+  "entryFlow": "jira_read_workflow",
   "toolsCount": 3,
   "inventory": [
+    {
+      "path": "catalogue/chunks/07b8ddf40eb48e0a9dc38b633add0e9f586d3ac454de74e8141739103525de8f.json",
+      "byteLength": 37138,
+      "sha256": "d0b61113ab2941c6e61bb49a984f1cc0c384984654be4e7da3940f0ecf1c3606"
+    },
+    {
+      "path": "catalogue/chunks/0bde8cf4bddb23be9cdeff64bacc0af1251ba2a7549d2dabb869aaa1671d952e.json",
+      "byteLength": 32926,
+      "sha256": "a6af06ede07660f0b8257664c5ec4f74bc9c1ae2195c355899d40c3bc2715862"
+    },
+    {
+      "path": "catalogue/chunks/13c6d45a650277ba7d59ed1e93c83bdd043d3e796f26871939a6672c71aed36b.json",
+      "byteLength": 38674,
+      "sha256": "9744228c47a30e188ee8ea44c0fa7276227613a32f882525c498d8d87fc1973e"
+    },
+    {
+      "path": "catalogue/chunks/1971298fef3801c4d2e4d2daed61e2c8dc6c670117eb6d37672f44ebc5554aec.json",
+      "byteLength": 37694,
+      "sha256": "13e5ae595ffef2c30ff92c5f36c223d4fd13542d533b896e882329370ae1fc31"
+    },
+    {
+      "path": "catalogue/chunks/2be1cb2af760c80c483cded3bbe05984fd07cbf70e6029c9e17dfea363f43a99.json",
+      "byteLength": 50022,
+      "sha256": "601dd2b67c97fe87307ff62eee5f44af8b6ff8d8a220421771f79335bdb1ed97"
+    },
+    {
+      "path": "catalogue/chunks/2bee9c9144a473b2b95ebb03a30ca6b1bdc9f5c82543d6f181565b8e8ec27b9c.json",
+      "byteLength": 54702,
+      "sha256": "dc5133ce73fb0776dd4e8432966db476beec74226e38722ac26b104c977258b4"
+    },
+    {
+      "path": "catalogue/chunks/33a492c9ff5e7bb105d681ed112ad260056c2db7d6e7b6dfe265c29cc9929818.json",
+      "byteLength": 41238,
+      "sha256": "0d64c9f717aa2c45483e6e10d3770592d12a5eadc28556aa40d47f6ecb58c5c6"
+    },
+    {
+      "path": "catalogue/chunks/3cb84a1416e6ec62eec11903a9f8f7f5eb412bb459618048ada15cdeafe85d5a.json",
+      "byteLength": 17742,
+      "sha256": "5b4c3ad3f22db0692ec64cbcdcea6abb09816273704b1ea288643de38645ffe2"
+    },
+    {
+      "path": "catalogue/chunks/489dfb3e2910f5b988246228b55e6ebe6797d65d001ff44bff5a324268282a65.json",
+      "byteLength": 53206,
+      "sha256": "4a49a2f22bf3cfd9c908421c9ddc47d8faf366b4ecb9a407319f3955b6f007c2"
+    },
+    {
+      "path": "catalogue/chunks/4987fa381ba2ed2d52140e384d3335c80e806f25c3295de06ca34185230e2eab.json",
+      "byteLength": 4397,
+      "sha256": "1178ceb0a884f144b3f331b65f4b0a848e920fdbcf7762de711fd83144ca2350"
+    },
+    {
+      "path": "catalogue/chunks/5b2c7a5be7fce41f86f05171c19e269144ce3a47a5fb518c1ff457161fb7af81.json",
+      "byteLength": 27082,
+      "sha256": "de4966cda84669060eabd5d6a4e8d3297ec5f563e1b9edb12a874fec8392dc9d"
+    },
+    {
+      "path": "catalogue/chunks/5c8b6efb7103ea7098bab8c49b2a3af1be444e9305293cb45763e0e40d7e0c26.json",
+      "byteLength": 42494,
+      "sha256": "36efde336682d01c90a57eb5575ca44e0c38583293578eceec131591eccf8e4a"
+    },
+    {
+      "path": "catalogue/chunks/60a1feff533b567337c1829c4ce96abcf9721f70c05029ba492aa4cede335b48.json",
+      "byteLength": 42242,
+      "sha256": "4a9d6c2cf82509e78df86584d4cd9ed2a6289edca0009078efc97286224078a9"
+    },
+    {
+      "path": "catalogue/chunks/6759d60d5889948aeacf42b439111d60712b2afa06dae17771bbd209ab87a882.json",
+      "byteLength": 55090,
+      "sha256": "c3b38262a57c8d4368615105bc11f3cfda168d4ca4588c08b2f281116c8469f0"
+    },
+    {
+      "path": "catalogue/chunks/6f35def9c7e32f997c4fa8c5c781df43f1c9a08ec6293b963db18cfdee1912ed.json",
+      "byteLength": 42370,
+      "sha256": "9231ed9197874cb4c69e5960cdd3b5a0e7751c17fe9a3232dbb3228f474ab096"
+    },
+    {
+      "path": "catalogue/chunks/75c820d8fb533238d138678b757e8acddc4753454c9530d924c6e0bf54f5945e.json",
+      "byteLength": 8253,
+      "sha256": "c60494a08be2cb6c99357fdd2f81254fb0f9e0957b7b409cd7d69436723ec27c"
+    },
+    {
+      "path": "catalogue/chunks/76e4f64989d4c17d25ba40e8872327045834e8653b68b7baaf0e4c585d1fd3d9.json",
+      "byteLength": 24046,
+      "sha256": "d85ed2ba2b9a9ecef373f433813b7f041f8afcfd247ff4d3dc958dad1684b6b7"
+    },
+    {
+      "path": "catalogue/chunks/87263d73579581580462036aeeacbe973ed606fdbac63d8e719eff657999bed7.json",
+      "byteLength": 51678,
+      "sha256": "fbb8a4f96f1c40ddce982880c02d620588341c4d86beb96dcffc66beb8d9f42a"
+    },
+    {
+      "path": "catalogue/chunks/87b6fd7daf092f8354d73d5cd8dd95c1dd3d14f14483c5611e74722ff7b94036.json",
+      "byteLength": 39046,
+      "sha256": "28f7c54fa817b174d31c448278ff72f0285aa8e3c16a0cdae30c550985115f3f"
+    },
+    {
+      "path": "catalogue/chunks/88ad3870df8240aadeccdad3fa4296e4aabf17ec3780bff312d88602fcad2b25.json",
+      "byteLength": 51938,
+      "sha256": "08ea7a4deff8e1a5f71518ea968380d8feefed67c8bf05046011c531aca9790d"
+    },
+    {
+      "path": "catalogue/chunks/8f3c3bd63afebcf99b76e4c8eeb4e2f53251399fe2874b4820f5d1b8496629fa.json",
+      "byteLength": 41702,
+      "sha256": "d3158e15856a57956412c53636a6b6f8ff6cad4213bb1e995f66beeeded32a96"
+    },
+    {
+      "path": "catalogue/chunks/9812add5c99ec2f6e5638c2101bffce59da84ce516ff3cfa0e0299f49f0c46a3.json",
+      "byteLength": 29514,
+      "sha256": "191a5f2bf3ecd804485566c5526f1bdea92e56382bf2f5ffdec5c27d7485cb01"
+    },
+    {
+      "path": "catalogue/chunks/9ae7a8f9e242870445f87bfa542dfe73849035a8020cfd1e682f2e31e36d990d.json",
+      "byteLength": 44066,
+      "sha256": "1dfe987b4e3d03171d20018dd85d279f68a653b8d1facc6047186f29a9690295"
+    },
+    {
+      "path": "catalogue/chunks/a11a2bbb3a7cbf44a36a821ce0c095624e130f9ffdd051e23d6baa5c3b751ed3.json",
+      "byteLength": 43186,
+      "sha256": "ecd016339dc6adf877797b6b884d322db6cbc8b5e16409212b3bbc4de826bca9"
+    },
+    {
+      "path": "catalogue/chunks/a273b2d030d6d0a98e3d4386661af9d83b135984a1702743ec329bed6733ce63.json",
+      "byteLength": 4861,
+      "sha256": "09ea95ddb46d2a412ad03ca37884f10584bdffc5946fd58e71ae8ce589421aa6"
+    },
+    {
+      "path": "catalogue/chunks/a620964b0489c7e680910d7572297e0af603e728e9dc4b2f7aceb7f74d8afbf2.json",
+      "byteLength": 38758,
+      "sha256": "e9f96d0ca2e35266afb48b0c61c42f29661795e306047073a841bfdcd392b87e"
+    },
+    {
+      "path": "catalogue/chunks/b4f84c91d603205bb8411272de001cc294d3b98ea92f8d634e8aae66b0b5c430.json",
+      "byteLength": 36026,
+      "sha256": "519f6c4420b48bf52f0641a95bc90ed425a06c695093bd3b13b84d4147e45f0d"
+    },
+    {
+      "path": "catalogue/chunks/b55f47bccf86acaea27cb4a28f2e0bc309dfaee7f04639c4568d19617e03522b.json",
+      "byteLength": 35782,
+      "sha256": "de65578eb55d6f9a5db0829f5305f15d2c9d2c89033d8184ef781f95289dea58"
+    },
+    {
+      "path": "catalogue/chunks/bb635421739b63344ab535eb0bbbeedd392b61be3f8d9162a17189cf4ec3f36b.json",
+      "byteLength": 41338,
+      "sha256": "bd66ee72a91d2fc078eabb2e1f256c1c39449c8132708944c474c66bea9e5aea"
+    },
+    {
+      "path": "catalogue/chunks/c8dc8caa38b1ffd949c2da55a4a5e52bf65cbe5bfeafc676e7162a886e0aad88.json",
+      "byteLength": 54422,
+      "sha256": "eae97ee5ef5f5cf37cfb8ce752c8e165984a01ac6f1984e1dfdc6b147ab0f2c1"
+    },
+    {
+      "path": "catalogue/chunks/c9f70005dd7d8b51cbd58b95fefb6acacd46568d9f2fc192b50bb26a6b939215.json",
+      "byteLength": 23214,
+      "sha256": "3805df022b22ec15906f8d7d784befeff1a9acc93ae4b1e02a6726bb8fa2dc10"
+    },
+    {
+      "path": "catalogue/chunks/cc85919600033ead97e3c75c9db2e56dbc05673ec1d6ca6ce7e51a9ff6c3aa2f.json",
+      "byteLength": 57562,
+      "sha256": "1eab3c1c1c758093d8a921cbde5cd8133c3bdab4c1b614650f1163b777179a25"
+    },
+    {
+      "path": "catalogue/chunks/d2b7ef753f87c33dea00fbc31670130dab95487b44c65ed3a8d0f0f1532056b7.json",
+      "byteLength": 39122,
+      "sha256": "d89ae396295906de565759203396439628a5029631fe04eff0e56aae9f7f725b"
+    },
+    {
+      "path": "catalogue/chunks/e4fea032b67e52f5e80687e3a28ee139294d9089dbf4a463d4db60e07e2a6eb1.json",
+      "byteLength": 40594,
+      "sha256": "77d113af4fc0c496375f60e0b73ae7fbc5e4b8bb08b5b2dfe1db7d6396930251"
+    },
+    {
+      "path": "catalogue/chunks/f69cb9917743f92652e2d374c23a47d9156fa11aad2697019ede854ffed11269.json",
+      "byteLength": 32802,
+      "sha256": "b0e2322fe87e2378be5174d20af7d595374723b2eb524e4e81809e0432b213a4"
+    },
+    {
+      "path": "catalogue/index.json",
+      "byteLength": 354049,
+      "sha256": "2b6e6e982e0a5083561c6e5671a7a27f491c87eb2a7954994d3cd9f644d0d64c"
+    },
+    {
+      "path": "catalogue/strategy.json",
+      "byteLength": 176,
+      "sha256": "f40cacd608d2b2c8e351736bb0fad2472127663e2f626b0ba0c4f8261d3bab79"
+    },
     {
       "path": "code/client.py",
       "byteLength": 411,
@@ -27,8 +212,8 @@
     },
     {
       "path": "code/siliq-graph.json",
-      "byteLength": 498,
-      "sha256": "d2d942002ca24e63892f9bab3a196d9aa530bc4b43b6542cd6c73f5a06bf65d1"
+      "byteLength": 327419,
+      "sha256": "570d15134d8332087d91abf25a7eae18b706de9ac05613b4ceb41538e4a869b0"
     },
     {
       "path": "fixtures/response.json",
@@ -37,8 +222,8 @@
     },
     {
       "path": "flow.json",
-      "byteLength": 498,
-      "sha256": "d2d942002ca24e63892f9bab3a196d9aa530bc4b43b6542cd6c73f5a06bf65d1"
+      "byteLength": 327419,
+      "sha256": "570d15134d8332087d91abf25a7eae18b706de9ac05613b4ceb41538e4a869b0"
     },
     {
       "path": "teach.json",
@@ -47,8 +232,8 @@
     },
     {
       "path": "tools.json",
-      "byteLength": 303420,
-      "sha256": "ad9e261f456abf3af5865c452576f1a1fe145208587695c8b6acba286c260aa3"
+      "byteLength": 304010,
+      "sha256": "cc2286fcee98a258e8faea38cac27c7b426b78a24a11f645ce5f35ff66c498c1"
     },
     {
       "path": "transforms/post.zs",
@@ -61,6 +246,6 @@
       "sha256": "357f1fe4ae1654239981ab0bdf6ba71aeec6340be24a5ca771238d9f2f8deb62"
     }
   ],
-  "createdAt": "2026-11-08T01:35:00Z",
-  "bundleSha256": "6abdd5300a26cd0f2e13d6056d19402feafc500a14c77dc631feace3035092d1"
+  "createdAt": "2026-11-08T12:23:47.341Z",
+  "bundleSha256": "6c0b24413d88f6e2db948e15bc07f007077519cbd51b84246b8e04cb223f8009"
 }

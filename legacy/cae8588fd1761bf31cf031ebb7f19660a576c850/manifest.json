@@ -1,0 +1,66 @@
+{
+  "$schema": "https://sqrengine.com/schemas/bundle/v1.json",
+  "name": "jira-cloud",
+  "displayName": "Jira Cloud",
+  "version": "1.0.1",
+  "author": "Siliqun Rotor Community",
+  "license": "Apache-2.0",
+  "description": "Siliqun Rotor Integration Bundle for Jira Cloud",
+  "category": "Integrations",
+  "entryFlow": "jira-real-read",
+  "toolsCount": 3,
+  "inventory": [
+    {
+      "path": "code/client.py",
+      "byteLength": 411,
+      "sha256": "a3b8c1fe626a84b17880206a01476006a45466365490d80cf18796bfa5a99e49"
+    },
+    {
+      "path": "code/client.ts",
+      "byteLength": 517,
+      "sha256": "cf85b5e38f7f5dbcd2f319ab1c3bb0477ba612b5689d16aed0590388ce380905"
+    },
+    {
+      "path": "code/request.sh",
+      "byteLength": 729,
+      "sha256": "65657240e0958c17b0aebcc86c78c454ec99e0d450d8caf1c59e3b14099a4647"
+    },
+    {
+      "path": "code/siliq-graph.json",
+      "byteLength": 498,
+      "sha256": "d2d942002ca24e63892f9bab3a196d9aa530bc4b43b6542cd6c73f5a06bf65d1"
+    },
+    {
+      "path": "fixtures/response.json",
+      "byteLength": 2,
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a"
+    },
+    {
+      "path": "flow.json",
+      "byteLength": 498,
+      "sha256": "d2d942002ca24e63892f9bab3a196d9aa530bc4b43b6542cd6c73f5a06bf65d1"
+    },
+    {
+      "path": "teach.json",
+      "byteLength": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "path": "tools.json",
+      "byteLength": 303420,
+      "sha256": "ad9e261f456abf3af5865c452576f1a1fe145208587695c8b6acba286c260aa3"
+    },
+    {
+      "path": "transforms/post.zs",
+      "byteLength": 26,
+      "sha256": "e1fa193e9c0dfa5ff4cdbff0bf542fddcb857d00239ee582076d663426e44d72"
+    },
+    {
+      "path": "transforms/pre.zs",
+      "byteLength": 25,
+      "sha256": "357f1fe4ae1654239981ab0bdf6ba71aeec6340be24a5ca771238d9f2f8deb62"
+    }
+  ],
+  "createdAt": "2026-11-08T01:35:00Z",
+  "bundleSha256": "6abdd5300a26cd0f2e13d6056d19402feafc500a14c77dc631feace3035092d1"
+}

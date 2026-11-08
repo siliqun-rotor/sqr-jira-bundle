@@ -1398,7 +1398,14 @@
         "source": {
           "spec_sha256": "2a7438c5feaa1fab2e64699cf3ed1b45685af3da356dbb987b216cd98adc12d0",
           "pointer": "/paths/~1rest~1api~13~1issue~1{issueIdOrKey}/get"
+        },
+        "credential_slots": {
+          "OAuth2": "OAUTH2_TOKEN",
+          "basicAuth": "BASICAUTH_TOKEN"
         }
+      },
+      "sqr/catalogue-source": {
+        "summary": "Get issue"
       }
     },
     "type": "function",
@@ -2047,7 +2054,14 @@
         "source": {
           "spec_sha256": "2a7438c5feaa1fab2e64699cf3ed1b45685af3da356dbb987b216cd98adc12d0",
           "pointer": "/paths/~1rest~1api~13~1myself/get"
+        },
+        "credential_slots": {
+          "OAuth2": "OAUTH2_TOKEN",
+          "basicAuth": "BASICAUTH_TOKEN"
         }
+      },
+      "sqr/catalogue-source": {
+        "summary": "Get current user"
       }
     },
     "type": "function",
@@ -5303,7 +5317,14 @@
         "source": {
           "spec_sha256": "2a7438c5feaa1fab2e64699cf3ed1b45685af3da356dbb987b216cd98adc12d0",
           "pointer": "/paths/~1rest~1api~13~1project~1search/get"
+        },
+        "credential_slots": {
+          "OAuth2": "OAUTH2_TOKEN",
+          "basicAuth": "BASICAUTH_TOKEN"
         }
+      },
+      "sqr/catalogue-source": {
+        "summary": "Get projects paginated"
       }
     },
     "type": "function",

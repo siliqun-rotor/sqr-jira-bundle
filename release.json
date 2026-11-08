@@ -1,14 +1,31 @@
 {
   "format": "siliqun-published-bundle/1",
-  "archive": "dist/6abdd5300a26cd0f2e13d6056d19402feafc500a14c77dc631feace3035092d1.sqr-bundle.zip",
-  "archiveSha256": "e5ac4cda4ae08a9ff575aa78cdc120336c4cbbcdc64638ec426f920776effaa1",
-  "bundleSha256": "6abdd5300a26cd0f2e13d6056d19402feafc500a14c77dc631feace3035092d1",
+  "archive": "dist/6c0b24413d88f6e2db948e15bc07f007077519cbd51b84246b8e04cb223f8009.sqr-bundle.zip",
+  "archiveSha256": "dd2aa93353034ba67e19cf5f2055d2e3a49d0f43ae117abdb11af3e2ca672a57",
+  "bundleSha256": "6c0b24413d88f6e2db948e15bc07f007077519cbd51b84246b8e04cb223f8009",
   "tools": [
     "get_issue",
     "get_current_user",
     "search_projects"
   ],
-  "studioSourceRevision": "dfa9508cb3d32b893783eebcd89e40549045749d",
+  "availableOperations": 630,
+  "catalogueId": "81a85f4641e948288fcbcc4b5b3edc1fc8f5dc84f1bac694658ee237fa75e95d",
+  "strategy": {
+    "mode": "on-demand",
+    "tags": [],
+    "effects": [
+      "read"
+    ],
+    "schemaBytes": 524288,
+    "operationIds": [
+      "get_issue",
+      "get_current_user",
+      "search_projects"
+    ],
+    "maxCandidates": 4,
+    "metadataBytes": 16384
+  },
+  "studioSourceRevision": "a5161af80fc2a7df181ee212f1161fdc854fba80",
   "provenance": {
     "documentationUrl": "https://dac-static.atlassian.com/cloud/jira/platform/swagger-v3.v3.json?_v=1.8516.152",
     "documentationSha256": "2a7438c5feaa1fab2e64699cf3ed1b45685af3da356dbb987b216cd98adc12d0"

@@ -1,0 +1,14 @@
+name: Verify Studio archive
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verify archive bytes and portable declarations
+        run: python3 scripts/verify-integration.py .
