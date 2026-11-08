@@ -1,0 +1,17 @@
+{
+  "format": "siliqun-published-bundle/1",
+  "archive": "dist/ef7da9c2c98f16c7e9578e76183ca56a5a33178b2aba727b8853956f19bfcc5a.sqr-bundle.zip",
+  "archiveSha256": "2a2deeb27d869bae1860b3743572a612c1e57efa1484f5081275fbe5a86a05aa",
+  "bundleSha256": "ef7da9c2c98f16c7e9578e76183ca56a5a33178b2aba727b8853956f19bfcc5a",
+  "tools": [
+    "get_issue",
+    "get_current_user",
+    "search_projects"
+  ],
+  "studioSourceRevision": "308a3bb123683b5eebeef049711cf60235c86f07",
+  "provenance": {
+    "documentationUrl": "https://dac-static.atlassian.com/cloud/jira/platform/swagger-v3.v3.json?_v=1.8516.152",
+    "documentationSha256": "2a7438c5feaa1fab2e64699cf3ed1b45685af3da356dbb987b216cd98adc12d0"
+  },
+  "scope": "Portable declarations; destination connections required. Runtime evidence belongs to its measured account/environment."
+}

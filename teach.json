@@ -1,7 +1,1 @@
-[
-  { "input": "Create a high priority bug in PROJ about login failure", "expect": "jira_create_issue" },
-  { "input": "File a task for user onboarding overhaul", "expect": "jira_create_issue" },
-  { "input": "Get details for issue PROJ-101", "expect": "jira_get_issue" },
-  { "input": "What is the status of PROJ-404?", "expect": "jira_get_issue" },
-  { "input": "Look up ticket PROJ-200 with local jira cli", "expect": "jira_cli_issue_view" }
-]
+[]

@@ -1,39 +1,26 @@
 {
-  "key": "jira_flow",
-  "entry": "decide",
-  "max_iterations": 8,
+  "key": "jira-real-read",
+  "entry": "choose",
   "nodes": [
     {
-      "id": "decide",
-      "at": [
-        0,
-        0,
-        0
-      ],
-      "kind": "model",
-      "on": {
-        "call_pending": "execute",
-        "turn": "respond"
-      }
+      "id": "choose",
+      "kind": "transform",
+      "script": "{:outcome \"decided\" :tool_call {:name \"search_projects\" :arguments {:maxResults 5}}}",
+      "next": "execute"
     },
     {
       "id": "execute",
-      "at": [
-        0,
-        0,
-        1
-      ],
-      "kind": "tool",
-      "next": "respond"
+      "kind": "execute",
+      "on": {
+        "ok": "done",
+        "empty": "done",
+        "denied": "done",
+        "error": "done"
+      }
     },
     {
-      "id": "respond",
-      "at": [
-        0,
-        0,
-        2
-      ],
-      "kind": "done"
+      "id": "done",
+      "kind": "respond"
     }
   ]
 }

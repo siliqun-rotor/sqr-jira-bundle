@@ -1,0 +1,10 @@
+{
+  "id": "10001",
+  "key": "PROJ-101",
+  "self": "https://api.atlassian.com/ex/jira/cloud-id/rest/api/3/issue/10001",
+  "fields": {
+    "summary": "Fix login failure on mobile",
+    "status": { "name": "In Progress" },
+    "assignee": { "displayName": "Alice Smith" }
+  }
+}

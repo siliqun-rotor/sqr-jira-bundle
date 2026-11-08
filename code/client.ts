@@ -1,17 +1,17 @@
 // Run the saved project flow through Siliqun Rotor Engine
-import { SiliqunRotorClient } from "@siliqun-rotor/sdk";
+import { SiliqunRotorClient } from '@siliqun-rotor/sdk';
 
 const client = new SiliqunRotorClient({
-  baseUrl: process.env.SQR_BASE_URL || "https://engine.sqrengine.com",
+  baseUrl: process.env.SQR_BASE_URL!,
   apiKey: process.env.SQR_API_KEY!,
-  projectId: "sqr-jira-bundle",
+  headers: { 'X-SQR-Project-ID': process.env.SQR_PROJECT_ID! },
 });
 
 async function main() {
   const response = await client.chat({
-    model: "sqr",
-    flow: "jira_flow",
-    messages: [{ role: "user", content: process.env.SQR_TASK || "Execute task" }],
+    model: 'sqr',
+    flow: 'jira-real-read',
+    messages: [{ role: 'user', content: process.env.SQR_TASK || 'Help' }],
   });
   console.log(response);
 }
