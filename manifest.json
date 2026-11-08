@@ -2,7 +2,7 @@
   "$schema": "https://sqrengine.com/schemas/bundle/v1.json",
   "name": "jira-cloud",
   "displayName": "Jira Cloud",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Siliqun Rotor Community",
   "license": "Apache-2.0",
   "description": "Siliqun Rotor Integration Bundle for Jira Cloud",
@@ -12,18 +12,18 @@
   "inventory": [
     {
       "path": "code/client.py",
-      "byteLength": 440,
-      "sha256": "62f70dbd9108a8952a5ff48ddd049935a4c1a76403a390683fc74db8312410cc"
+      "byteLength": 411,
+      "sha256": "a3b8c1fe626a84b17880206a01476006a45466365490d80cf18796bfa5a99e49"
     },
     {
       "path": "code/client.ts",
-      "byteLength": 547,
-      "sha256": "a626cdeb1dd55b05b4bb81143f0cb471a350f998b61d3b7821e5594d1d270599"
+      "byteLength": 517,
+      "sha256": "cf85b5e38f7f5dbcd2f319ab1c3bb0477ba612b5689d16aed0590388ce380905"
     },
     {
       "path": "code/request.sh",
-      "byteLength": 359,
-      "sha256": "4bc670972117d367c961dc3b01658755eb3d2eacc98c9ecbb6b0ecbf95b72312"
+      "byteLength": 729,
+      "sha256": "65657240e0958c17b0aebcc86c78c454ec99e0d450d8caf1c59e3b14099a4647"
     },
     {
       "path": "code/siliq-graph.json",
@@ -61,6 +61,6 @@
       "sha256": "357f1fe4ae1654239981ab0bdf6ba71aeec6340be24a5ca771238d9f2f8deb62"
     }
   ],
-  "createdAt": "2026-11-08T00:00:00Z",
-  "bundleSha256": "ef7da9c2c98f16c7e9578e76183ca56a5a33178b2aba727b8853956f19bfcc5a"
+  "createdAt": "2026-11-08T01:35:00Z",
+  "bundleSha256": "6abdd5300a26cd0f2e13d6056d19402feafc500a14c77dc631feace3035092d1"
 }

@@ -6,8 +6,8 @@ Install the immutable ZIP named in [release.json](release.json). Authentication 
 
 Execution and model-quality evidence apply only to the account, artifact and environment named in their receipts. Package verification does not establish provider execution.
 
-The predecessor is preserved under legacy/94f3ec258afcab806253b79cf691bdff005ce8a8/. Its descriptions and performance figures do not establish this release’s behavior.
+The predecessor is preserved under legacy/18703e2df574ba55cded900f0d75e0b099d0f1c0/. Its descriptions and performance figures do not establish this release’s behavior.
 
-Bundle SHA-256: ef7da9c2c98f16c7e9578e76183ca56a5a33178b2aba727b8853956f19bfcc5a
+Bundle SHA-256: 6abdd5300a26cd0f2e13d6056d19402feafc500a14c77dc631feace3035092d1
 
-Archive SHA-256: 2a2deeb27d869bae1860b3743572a612c1e57efa1484f5081275fbe5a86a05aa
+Archive SHA-256: e5ac4cda4ae08a9ff575aa78cdc120336c4cbbcdc64638ec426f920776effaa1

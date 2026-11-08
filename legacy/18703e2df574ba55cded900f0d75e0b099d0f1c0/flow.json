@@ -1,0 +1,26 @@
+{
+  "key": "jira-real-read",
+  "entry": "choose",
+  "nodes": [
+    {
+      "id": "choose",
+      "kind": "transform",
+      "script": "{:outcome \"decided\" :tool_call {:name \"search_projects\" :arguments {:maxResults 5}}}",
+      "next": "execute"
+    },
+    {
+      "id": "execute",
+      "kind": "execute",
+      "on": {
+        "ok": "done",
+        "empty": "done",
+        "denied": "done",
+        "error": "done"
+      }
+    },
+    {
+      "id": "done",
+      "kind": "respond"
+    }
+  ]
+}

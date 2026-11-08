@@ -1,4 +1,4 @@
-// Run the saved project flow through Siliqun Rotor Engine
+// Requires @siliqun-rotor/sdk >= 0.1.5; runs the installed project flow
 import { SiliqunRotorClient } from '@siliqun-rotor/sdk';
 
 const client = new SiliqunRotorClient({
@@ -8,11 +8,10 @@ const client = new SiliqunRotorClient({
 });
 
 async function main() {
-  const response = await client.chat({
-    model: 'sqr',
-    flow: 'jira-real-read',
-    messages: [{ role: 'user', content: process.env.SQR_TASK || 'Help' }],
-  });
+  const response = await client.runProjectFlow(
+    process.env.SQR_PROJECT_ID!,
+    process.env.SQR_TASK || 'Help',
+  );
   console.log(response);
 }
 
